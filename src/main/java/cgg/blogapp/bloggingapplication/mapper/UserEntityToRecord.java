@@ -9,7 +9,7 @@ public class UserEntityToRecord  implements Function<User,UserRecord>{
 
     @Override
     public UserRecord apply(User user) {
-       return new UserRecord(user.getId(), user.getName(),user.getEmail(), user.getPassword(),user.getAbout());
+       return new UserRecord(user.getId(), user.getName(),user.getEmail(), user.getPassword(),user.getAbout(),user.getImageName());
     }
     
 }

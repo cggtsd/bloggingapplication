@@ -1,5 +1,6 @@
 package cgg.blogapp.bloggingapplication.payloads;
 
+import cgg.blogapp.bloggingapplication.validate.ImageNameValid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 
@@ -13,6 +14,8 @@ public record UserRecord(
     @NotEmpty
     String password,
     @NotEmpty
-    String about) {
+    String about,
+    @ImageNameValid
+    String imageName) {
     
 }
